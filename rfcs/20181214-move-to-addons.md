@@ -9,26 +9,32 @@
 ## Objective
 
 With the upcoming removal of tf.contrib in TF 2.0, we are in the process
-of deciding what existing functionality will be moved and maintained in the
-[tensorflow/addons](https://github.com/tensorflow/addons) repository.
+of deciding what existing functionality will be moved and maintained in
+the [tensorflow/addons](https://github.com/tensorflow/addons)
+repository.
 
-This document details what functionality the SIG plans to move and invites
-discussion around the decisions.
+This document details what functionality the SIG plans to move and
+invites discussion around the decisions.
 
 
 ## Motivation
 
-We wish to solicit discussion regarding what tf.contrib code will be moved.
-Specifically, there are many contributions that are feasible to move,
-but we were unable to determine if there is any value in doing so.
+We wish to solicit discussion regarding what tf.contrib code will be
+moved. Specifically, there are many contributions that are feasible to
+move, but we were unable to determine if there is any value in doing so.
 
 ## Design Proposal
 
 ### Criteria for moving
 1) The functionality is not otherwise available in TensorFlow
 1) There is sufficient interested in the community to maintain it
-1) The code conforms to an established API pattern (Some pieces can be refactored if needed)
+1) The code conforms to an established API pattern
+(Some pieces can be refactored if needed)
 
+It is worth noting that just because some functionality isn't part of
+the initial move, does not mean it won't be one day part of addons
+if there is value. We will begin reviewing pull requests to the
+repository after our initial move and directory structure is shaped.
 
 ### Code to be moved from tf.contrib to addons
 
