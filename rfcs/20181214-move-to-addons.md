@@ -4,7 +4,7 @@
 :-------------- |:---------------------------------------------------- |
 | **Author(s)** | Sean Morgan (seanmorgan@outlook.com), Armando Fandango (armando@neurasights.com) |
 | **Sponsor**   | Karmel Allison (karmel@google.com)                 |
-| **Updated**   | 2018-12-12                                           |
+| **Updated**   | 2018-12-16                                           |
 
 ## Objective
 
