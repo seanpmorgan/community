@@ -19,22 +19,21 @@ invites discussion around the decisions.
 
 ## Motivation
 
-We wish to solicit discussion regarding what tf.contrib code will be
-moved. Specifically, there are many contributions that are feasible to
-move, but we were unable to determine if there is any value in doing so.
+While the tensorflow repository retains core functionality along with high level frameworks such as estimators and Keras, the contributed code for additions and extensions are proposed to be moved to the repository tf.addons.
+
+In this RFC, we are soliciting discussion regarding what tf.contrib code will be moved. This RFC discussion will help us determine the feasibility and value of moving the code along with the future maintainability aspects.
 
 ## Design Proposal
 
 ### Criteria for moving
 1) The functionality is not otherwise available in TensorFlow
-1) There is sufficient interested in the community to maintain it
-1) The code conforms to an established API pattern
-(Some pieces can be refactored if needed)
+1) There is sufficient interest in the community to maintain the code being moved
+1) The code conforms to an established API pattern (Some pieces can be refactored if needed)
 
 It is worth noting that just because some functionality isn't part of
-the initial move, does not mean it won't be one day part of addons
+the initial move, does not mean it won't be eventually part of addons
 if there is value. We will begin reviewing pull requests to the
-repository after our initial move and directory structure is shaped.
+repository after the directory structure is shaped during the initial move.
 
 ### Code to be moved from tf.contrib to addons
 
@@ -141,7 +140,7 @@ repository after our initial move and directory structure is shaped.
 | solvers | ALL | Pending community interest to maintain |
 | integrate | ALL | Pending community interest to maintain |
 
-### Code that will not be copied from tf.contrib to addons
+### Code that will not be copied from tf.contrib to addons and hence would not be available in either of tf.contrib or addons
 
 | Module (tf.contrib)     | Class/Function   | Rationale                               |
 |:----------------------- |:----------- |:------------------------------------ |
@@ -225,5 +224,6 @@ repository after our initial move and directory structure is shaped.
 ## Questions and Discussion Topics
 
 * Are there any modules being excluded from the move that you feel have substantial value to the community?
+* Are there any new modules that you feel should be added to addons from somewhere else apart from tf.contrib
 * We're actively collecting volunteers to help move, refactor and/or maintain in Addons (Please reachout to our [mailing list](https://groups.google.com/a/tensorflow.org/forum/#!forum/addons)
 or [gitter channel](https://gitter.im/tensorflow/sig-addons) if you have interest in helping our community.
